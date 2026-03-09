@@ -16,7 +16,7 @@ This repository contains the scripts and environment setup used to perform the p
     ```
     conda activate phenom-distribution-ppe
     ```
-5. Download the noise power spectral density (O5) for LIGO and Virgo, then generate the injection and prior files by running
+5. Download the noise power spectral density (O5) for LIGO and Virgo, then generate injection, prior, and `parallel-bilby` configuration files by running
     ```
     cd data/analysis/bilby-inference
     python create_psd.py
