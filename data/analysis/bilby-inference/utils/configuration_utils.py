@@ -28,9 +28,7 @@ def update_slurm_extra_lines_in_ini():
     replacement_value = " ".join(parts)
 
     script_dir = Path(__file__).resolve().parent.parent
-    print(script_dir)
     ini_dir = script_dir / "configuration"
-    print(ini_dir)
 
     for ini_path in sorted(ini_dir.glob("*-no-slurm-extra-lines.ini")):
         lines = ini_path.read_text().splitlines(keepends=True)
