@@ -1,4 +1,4 @@
-# phenom-distribution-ppe-public
+# phenom-distribution-ppe
 This repository contains the scripts and environment setup used to carry out the parameter estimation in [_Impact of numerical-relativity waveform calibration on parametrized post-Einsteinian tests_](https://arxiv.org/abs/2603.15765). It interfaces [`ripplegw`](https://github.com/tedwards2412/ripple) (waveform generation) with [`bilby`](https://github.com/bilby-dev/bilby) (Bayesian inference).
 
 ## Quick start
@@ -6,7 +6,7 @@ This repository contains the scripts and environment setup used to carry out the
    - Laptop: intended for file generation, code development, and postprocessing (An IPython kernel for Jupyter notebook is created during installation).
    - Cluster: intended for running the parameter-estimation jobs across multiple nodes.
 2. Populate `config_example.yaml` and rename it to `config.yaml`.
-3. From within the repository `phenom-distribution-ppe-public`, create the conda environment by running
+3. From within the repository `phenom-distribution-ppe`, create the conda environment by running
     ```
     bash conda/create_phenom_distribution_ppe.sh 
     ```
